@@ -1,0 +1,37 @@
+<?php if($this->getItems()->getSize()): ?>
+<div class="row content-center">
+    <h3 class="heading slider-heading">
+        <span class="border-underline">Wear with</span><span class="gray-color">You may also like</span>
+    </h3>
+</div>
+<div class="row slider-wrapper" id="moreProductsSlider">
+    <div class="slider-list">
+        <?php for ($i = 0; $i < 3; $i++ ): ?>
+    <?php foreach($this->getItems() as $_item): ?>
+        <div class="col-md-3 col-sm-6 col-12">
+
+            <div class="image-responsive" style="background-image: url(<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(256) ?>)"></div>
+            <p class="gray-color product-name">
+                <span><?php echo $this->htmlEscape($_item->getName()) ?></span>
+            </p>
+            <div class="gray-color">
+                <?php echo $this->getPriceHtml($_item) ?>
+            </div>
+
+            <p class="product-shop-now red-color">
+                <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>">
+                    <span>Shop now <i class="icon-light-right"></i></span>
+                </a>
+            </p>
+        </div>
+    <?php endforeach; ?>
+        <?php endfor ?>
+    </div>
+    <div class="slider-control slider-button slider-button-left" data-target="#moreProductsSlider" data-navigation="prev">
+        <i class="icon-light-left"></i>
+    </div>
+    <div class="slider-control slider-button slider-button-right" data-target="#moreProductsSlider" data-navigation="next">
+        <i class="icon-light-right"></i>
+    </div>
+</div>
+<?php endif ?>

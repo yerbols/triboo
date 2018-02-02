@@ -1,0 +1,27 @@
+<?php
+$_product = $this->getProduct();
+$_helper = $this->helper('catalog/output');
+?>
+<div class="col-md-3">
+    <?php if (count($this->getGalleryImages()) > 0): ?>
+    <ul class="vertical-thumbnails">
+        <?php foreach ($this->getGalleryImages() as $_image): ?>
+        <li>
+            <a href="#" data-image-url="<?php echo $this->helper('catalog/image')->init($this->getProduct(), '', $_image->getFile()); ?>" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>">
+                <div class="image-square" style="background-image: url(<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(100); ?>)"></div>
+            </a>
+        </li>
+        <?php endforeach; ?>
+    </ul>
+    <?php endif; ?>
+</div>
+<div class="col-md-9">
+    <?php if ($_product->getImage() != 'no_selection' && $_product->getImage()): ?>
+    <div class="product-preview">
+        <?php
+        $_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image').'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+        echo $_helper->productAttribute($_product, $_img, 'image');
+        ?>
+    </div>
+    <?php endif; ?>
+</div>

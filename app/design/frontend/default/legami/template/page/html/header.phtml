@@ -1,0 +1,47 @@
+<header>
+    <div class="header-wrapper">
+        <div class="top-banner row items-center red-color bg-gray">
+            <p>
+                Spedizione gratuita per ordini sopra i 30€ per Paesi UE
+            </p>
+        </div>
+        <div class="container row">
+            <div class="logo-wrapper">
+                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="row nav">
+
+                    <?php echo $this->getChildHtml('topMenu') ?>
+
+                    <li>
+                        <a href="#">
+                            <span class="red-color">#Wearelegami</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links-wrapper">
+                <ul class="row">
+                    <li>
+                        <a href="#">
+                            <i class="icon-search"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" data-target-element="#header-account" class="skip-link skip-account">
+                            <i class="icon-account"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo $this->helper('checkout/cart')->getCartUrl(); ?>">
+                            <i class="icon-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

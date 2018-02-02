@@ -1,0 +1,65 @@
+@font-face{
+  font-family:'icomoon';
+  src:url(../assets/fonts/icomoon.ttf);
+  src:url(../assets/fonts/icomoon.eot) format("embedded-opentype"),
+      url(../assets/fonts/icomoon.ttf) format("truetype"),
+      url(../assets/fonts/icomoon.woff) format("woff"),
+      url(../assets/fonts/icomoon.svg#icomoon) format("svg");
+  font-weight:normal;
+  font-style:normal
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family:'icomoon'!important;
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.icon-menu:before{content:"\e900"}
+.icon-account:before{content:"\e90f"}
+.icon-play:before{content:"\e913"}
+.icon-select:before{content:"\e92a"}
+.icon-cart:before{content:"\e90e"}
+.icon-checked:before{content:"\e927"}
+.icon-home:before{content:"\e925"}
+.icon-mail:before{content:"\e922"}
+.icon-double-arrow-right:before{content:"\e903"}
+.icon-left:before{content:"\e901"}
+.icon-right:before{content:"\e902"}
+.icon-chat:before{content:"\e904"}
+.icon-customercare:before{content:"\e905"}
+.icon-close:before{content:"\e906"}
+.icon-facebook:before{content:"\e907"}
+.icon-google-plus:before{content:"\e908"}
+.icon-instagram:before{content:"\e909"}
+.icon-language:before{content:"\e90a"}
+.icon-light-up:before{content:"\e924"}
+.icon-light-down:before{content:"\e926"}
+.icon-light-left:before{content:"\e90b"}
+.icon-light-right:before{content:"\e90c"}
+.icon-listing:before{content:"\e90d"}
+.icon-minus:before{content:"\e910"}
+.icon-newsletter:before{content:"\e911"}
+.icon-pinterest:before{content:"\e912"}
+.icon-plus:before{content:"\e914"}
+.icon-search:before{content:"\e915"}
+.icon-shipping:before{content:"\e916"}
+.icon-store:before{content:"\e917"}
+.icon-chevron-up:before{content:"\e918"}
+.icon-trash:before{content:"\e919"}
+.icon-triangle-down:before{content:"\e921"}
+.icon-triangle-up:before{content:"\e91a"}
+.icon-caret-down:before{content:"\e91b"}
+.icon-twitter:before{content:"\e91c"}
+.icon-youtube:before{content:"\e91d"}
+.icon-wishlist:before{content:"\e91e"}
+.icon-plus-circled:before{content:"\e91f"}
+.icon-loading:before{content:"\e923"}
+.icon-logout:before{content:"\e920"}
+.icon-flickr:before{content:"\e929"}
+.icon-linkedin:before{content:"\e928"}
